@@ -63,12 +63,14 @@ const FirebaseProvider = ({ children }) => {
       email,
       password
     );
+    
     console.log("result: ", result);
   };
 
   const signinWithEP = async (email, password) => {
     const result = await signInWithEmailAndPassword(fireauth, email, password);
     console.log("logged in : ", result);
+
   };
   
   function logout() {
@@ -170,6 +172,7 @@ const FirebaseProvider = ({ children }) => {
         placeOrder,
         fetchMyBooks,
         user,
+        setUser,
         getOrders,
         logout
       }}

@@ -214,3 +214,171 @@
     
     }
  }
+
+
+
+ /* resdesigning registration page  */
+
+ .loginpagebg{
+   /* position: relative; */
+   display: flex;
+   width: 1248px;
+   height: 1024px;
+   margin: auto;
+   background: #EBD077;
+   border-radius: 20px;
+ }
+ .innerpart{
+
+width: 100rem;
+height: 80rem;
+display: flex;
+justify-content: flex-end;
+border: none;
+margin: 10rem auto;
+background: #deb631;
+border-radius: 20px;
+box-shadow: -5px 5px 20px ;
+ }
+
+ .innerpart .cName{
+   width: 397px;
+   height: 135.22px;
+   font-family: 'Syne';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 100px;
+   text-transform: capitalize;
+   margin: 10px;
+   color: #FFFFFF;
+    }
+   
+
+ .innerpart img{
+position: relative;
+top: 10%; 
+left: 8.5%;
+height: 70rem;
+-webkit-filter: drop-shadow(-2px 2px 5px #222);
+filter: drop-shadow(-2px 2px 5px #222);
+
+ }
+
+
+ .rightpart{
+   display: flex; 
+width: 1024px;
+height: 79.8rem;
+
+/* background: #FFFFFF; */
+
+background: #FFFFFF;
+border-radius: 40px 20px 20px 40px;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+ }
+.all-input{
+   display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+.rightpart .create-account{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius:20px;
+   width: 35rem;
+   font-size: 4rem;
+   margin: 5rem 0;
+}
+
+ .rightpart .inputField{
+   display: flex;
+width: 380px;
+height: 40px;
+border-radius: 10px;
+position: relative;
+margin: 4rem;
+font-size: 1.5rem;
+box-shadow: 2px 2px 3px gray;
+
+
+ }
+ .inputs{
+   position: absolute;
+   bottom: 2.5rem;
+   left: 1rem;
+   padding:0 0.5rem;
+   background: white;
+   border: none;
+   
+    }
+
+    .or-btn{
+      margin: 5px;
+      font-size: 1.2rem;
+   }
+   
+   .or-btn .acc-btn{
+      width: 28rem;
+      background-color: rgb(104, 165, 104);
+      border: 1px solid gray;
+      margin: 10px auto ;
+      height: 3.5rem;
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 2px 2px 3px gray;
+      cursor: pointer;
+      
+   }
+   .acc-btn:hover{
+      font-size: 2.1rem;
+ }
+
+
+
+
+.or-btn .line{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   color:gray;
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: row;
+}
+.line div{
+   background-color: gray;
+   opacity: 0.7;
+   height: 1px;
+   width: 18rem;
+   margin: 1rem 1rem 0rem 1rem;
+
+}
+
+.google{
+   display: flex;
+   right:50rem;
+   border: 1px solid gray;
+   width: 25rem;
+   height: 4rem;
+   align-items: center;
+   font-size: 1.5rem;
+   padding: 0 2rem;
+   justify-content: flex-end;
+}
+.google img{
+   position: relative;
+   top: 0;
+   left: -5px;
+   width: 35px;
+   height: 35px;
+   box-shadow: none;
+
+}
+
