@@ -42,9 +42,9 @@ useEffect(()=>{
   }
 
   return (
-    <div className='container mt-5 '>
-      <h1>{data.name}</h1>
-        <img src={url} alt="bookimage" style={{ borderRadius:"2rem", width: "30rem",height:"30rem" ,border:"2px solid gray",objectFit: "cover"}}/>
+    <div className='container details '>
+      <h1 className='mt-5'>{data.name}</h1>
+        <img src={url} alt="bookimage" />
         <h2>Details</h2>
         <h4>price: <FormatPrice price={data.price} /></h4>
         <h2>Owner Detail</h2>
@@ -53,6 +53,7 @@ useEffect(()=>{
         <p>Email: {data.userEmail}</p> 
         <Form.Label>qty</Form.Label>
           <Form.Control
+            className='w-25'
             type="number"
             placeholder="enter quantity"
             onChange={(e) => setQty(e.target.value)}

@@ -4,7 +4,8 @@ import Form from "react-bootstrap/Form";
 import { useFirebase } from "../context/FirebaseContext";
 import { Link, useNavigate } from "react-router-dom";
 import logoImg from "../assets/images/logoimg.png";
-import glogo from "../assets/images/icon-google.png"
+import registerimg from "../assets/images/registerimg.svg";
+import google from "../assets/images/icon-google.png"
 
 const RegisterPage = () => {
   const firebase = useFirebase();
@@ -30,47 +31,22 @@ const RegisterPage = () => {
   }, [isLoggedIn, navigate]);
 
   return (
-    <div className="container mt-5">
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-          />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassord(e.target.value)}
-            value={password}
-          />
-        </Form.Group>
-
-        <Button variant="primary" type="submit">
-          Create Account
-        </Button>
-      </Form>
-
+    <div className=" register">
+      <h1>dhfjshf</h1>
+    
       {/* //my design */}
       <Form onSubmit={handleSubmit}>
-      <div className="loginpagebg">
-        <div className="innerpart">
+      <div className="loginpagebg ">
+        <div className="innerpart position-relative ">
+          <img src={registerimg} alt="registerimg" className=" position-absolute registerimg " />
           <h1 className="cName">the book store</h1>
-          <img src={logoImg} alt="logoImg" />
+          <img className="img3d " src={logoImg} alt="logoImg" />
           <div className="rightpart">
             <h1 className="create-account">Create Account</h1>
       <Form.Group className="mb-3" controlId="formBasicPassword">
                
-            <div className="all-input">
-              <div className="firstlast">
+            <div className="all-inputs">
+              <div className="firstlast ">
                 <div className="inputField">
                   <Form.Label className="inputs">First Name</Form.Label>
                   <Form.Control
@@ -116,7 +92,7 @@ const RegisterPage = () => {
             <div className="or-btn">
               <Button type="submit" className="acc-btn">Create Account</Button>
 
-              <span>
+              <span className="already">
                 Already have an Account? <Link to="/login">Log In</Link>{" "}
               </span>
 
@@ -129,7 +105,7 @@ const RegisterPage = () => {
 
             <div className="google"> 
             
-            <img src={glogo} alt="googleimg" />
+            <img src={google} alt="googleimg" />
             <div>
             Sign Up with Google
             </div>
@@ -150,6 +126,8 @@ const RegisterPage = () => {
 
 
     </div>
+
+
   );
 };
 

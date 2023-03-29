@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import BookCard from "../components/Card";
 import { useFirebase } from "../context/FirebaseContext";
 import CardGroup from "react-bootstrap/CardGroup";
-import  "../App.css";
+// import  "../App.css";
 
 
 const ViewOrder = () => {

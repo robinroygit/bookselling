@@ -22,8 +22,8 @@ const ViewOrderDetail = () => {
           <div key={data.userID} className="mt-3 p-2 w-25 border-dark " style={{border:"1px solid gray"}}> 
             <Button style={{borderRadius:"45%"}} >{index+1}</Button>
             <h5>Order By:{data.displayName}</h5>
-            <h5>Qty: {data.qty}</h5>
-            <h5>Email : {data.userEmail}</h5>
+            <h5>Qty: {data.qty}</h5>dsffs
+            <h5>Email : {data.userEmail}</h5>dfs
             <h5>Order Date: {data.time}</h5>
           </div>
         );

@@ -1,0 +1,477 @@
+:root{
+    --purple:#8e44ad;
+    --red:#c0392b;
+    --orange:#f39c12;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+ 
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+ }
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+ section{
+    padding:3rem 2rem;
+ }
+
+ .title{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 8rem;
+
+ }
+
+
+.main-nav{
+    /* background-color: rgb(112, 177, 255); */
+    display: grid;
+    width: 100%;
+    grid-template-columns: 5rem 1fr 2fr 1fr 5rem;
+    font-size: 1rem;
+
+
+}
+.mynav{
+ margin: 0 1rem;
+ text-decoration: none;
+ text-transform: capitalize;
+ color: gray;
+    font-weight: bolder;
+}
+.navs{
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.home-image img{
+    width: 100%;
+    object-fit: contain;
+
+}
+.mylogo img{
+    width:1rem;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
+  .main-nav .mylogo{
+    /* background-color: rgb(112, 177, 255); */
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+  .products .box-container{
+    max-width: 1400px;
+    margin:15px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    gap:1.5rem;
+    justify-content: center;
+
+ }
+ 
+ .products .box-container .box{
+    width: 30rem;
+    height: 50rem;
+    border-radius: .5rem;
+    background-color:white;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    text-align: center;
+    border:var(--border);
+    position: relative;
+    margin: 5px;
+    /* border:2px solid red; */
+    
+} 
+.box img{
+    width: 100%;
+   height: 40rem;
+   aspect-ratio: 3/2;
+   object-fit: contain;
+ }
+ .box .text{
+    font-size: 1.3rem;
+ }
+ .box .title{
+    font-size: 1.7rem;
+ }
+ .box .btn{
+    width: 13rem;
+    height: 4rem;
+    font-size: 2rem;
+ }
+
+/* 
+ /* .products .box-container .box .image{
+    height: 30rem;
+ } */ 
+ 
+ .products .box-container .box .name{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:var(--black);
+ }
+
+/* for small sized screen  */
+ @media (max-width:768px){
+
+    #menu-btn{
+       display: inline-block;
+    }
+ 
+    .header .header-2 .flex .navbar{
+       position: absolute;
+       top:99%; left:0; right:0;
+       background-color: var(--white);
+       border-top: var(--border);
+       border-bottom: var(--border);
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+ 
+    .header .header-2 .flex .navbar.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+ 
+    .header .header-2 .flex .navbar a{
+       display: block;
+       font-size: 2.5rem;
+       margin:2rem;
+    }
+ 
+    .home .content h3{
+       font-size: 3.5rem;
+    }
+     
+ 
+ 
+ }
+ 
+
+ @media (max-width:450px){
+
+    html{
+       font-size: 50%;
+    }
+ 
+    .heading h3{
+       font-size: 3.5rem;
+    }
+ 
+    .title{
+       font-size: 3rem;
+    }
+ 
+    .mynav{
+        margin: 0 1rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: gray;
+           font-weight: bolder;
+       }
+       .navs{
+        font-size: 1rem;
+    }
+       
+       .products .box-container{
+           margin:5px auto;
+           
+        }
+        .products .box-container .box{
+        border-radius: .5rem;
+        background-color:white;
+        box-shadow: var(--box-shadow);
+        padding:2rem;
+        text-align: center;
+        border:var(--border);
+
+        position: relative;
+
+     } 
+ 
+     .main-nav .mylogo{
+        /* background-color: rgb(112, 177, 255); */
+        font-size: large;
+        font-weight: bold;
+    
+    }
+ }
+
+
+
+ /* resdesigning registration page  */
+
+ .loginpagebg{
+   /* position: relative; */
+   display: flex;
+   width: 1248px;
+   height: 1024px;
+   margin: auto;
+   background: #EBD077;
+   border-radius: 20px;
+ }
+ .innerpart{
+width: 60rem;
+height: 60rem;
+display: flex;
+justify-content: flex-end;
+border: none;
+margin: 10rem auto;
+background: #deb631;
+border-radius: 20px;
+box-shadow: -5px 5px 20px ;
+ }
+
+ .innerpart .cName{
+   width: 397px;
+   height: 135.22px;
+   font-family: 'Syne';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 100px;
+   text-transform: capitalize;
+   margin: 10px;
+   color: #FFFFFF;
+    }
+   
+
+ .innerpart img{
+position: relative;
+top: 10%; 
+left: 8.5%;
+height: 70rem;
+-webkit-filter: drop-shadow(-2px 2px 5px #222);
+filter: drop-shadow(-2px 2px 5px #222);
+
+ }
+
+
+ .rightpart{
+   display: flex; 
+width: 1024px;
+height: 79.8rem;
+background: #FFFFFF;
+border-radius: 40px 20px 20px 40px;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+ }
+.all-input{
+   display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+.rightpart .create-account{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius:20px;
+   width: 35rem;
+   font-size: 4rem;
+   margin: 5rem 0;
+}
+
+ .rightpart .inputField{
+   display: flex;
+width: 380px;
+height: 40px;
+border-radius: 10px;
+position: relative;
+margin: 4rem;
+font-size: 1.5rem;
+box-shadow: 2px 2px 3px gray;
+ }
+ .inputs{
+   position: absolute;
+   bottom: 2.5rem;
+   left: 1rem;
+   padding:0 0.5rem;
+   background: white;
+   border: none;
+   
+    }
+
+    .or-btn{
+      margin: 5px;
+      font-size: 1.2rem;
+      position: relative;
+   
+   }
+   
+   .or-btn .acc-btn{
+      width: 28rem;
+      background-color: rgb(104, 165, 104);
+      margin: 10px auto ;
+      height: 3.5rem;
+      font-size: 2rem;
+      border: 1px solid gray;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 2px 2px 3px gray;
+      cursor: pointer;
+      position:absolute;
+      top: -5rem;
+      left: 7rem;
+      
+   }
+   .acc-btn:hover{
+      font-size: 2.1rem;
+ }
+
+
+
+
+.or-btn .line{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   color:gray;
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: row;
+}
+.line div{
+   background-color: gray;
+   opacity: 0.7;
+   height: 1px;
+   width: 18rem;
+   margin: 1rem 1rem 0rem 1rem;
+
+}
+
+.google{
+   display: flex;
+   right:50rem;
+   border: 1px solid gray;
+   width: 25rem;
+   height: 4rem;
+   align-items: center;
+   font-size: 1.5rem;
+   padding: 0 2rem;
+   justify-content: flex-end;
+}
+.google img{
+   position: relative;
+   top: 0;
+   left: -5px;
+   width: 35px;
+   height: 35px;
+   box-shadow: none;
+
+}
+
+@media (max-width:600px) {
+
+
+   .loginpagebg{
+      /* position: relative; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 110vw;
+      height: 110vh;
+      margin: auto;
+      background: #EBD077;
+      border-radius: 20px;
+    }
+    .innerpart{
+   width: 100vw;
+   height: 100vh;
+   margin: 2rem auto;
+
+
+    }
+    .innerpart .cName{
+      width: 397px;
+      height: 135.22px;
+      font-family: 'Syne';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 100px;
+      text-transform: capitalize;
+      margin: 10px;
+      color: #FFFFFF;
+       }
+   
+   
+   
+    .rightpart{
+      display: flex; 
+   width: 100%;
+   height: 100%;
+   background: #FFFFFF;
+   border-radius: 20px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+    }
+   
+    .innerpart img{
+      position: relative;
+      top: 10%; 
+      left: 8.5%;
+      height: 7rem;
+      -webkit-filter: drop-shadow(-2px 2px 5px #222);
+      filter: unset;
+         display: none;
+
+      
+       }
+
+       .google img{
+         position: relative;
+         top: 0;
+         left: -5px;
+         width: 20px;
+         height: 20px;
+         box-shadow: none;
+      
+      }
+
+      .rightpart .inputField{
+         display: flex;
+      width: 380px;
+      height: 40px;
+      border-radius: 10px;
+      position: relative;
+      margin: 4rem;
+      font-size: 2rem;
+      color: gray;
+      box-shadow: unset;
+      
+      
+       }
+       .innerpart .cName{
+         width: 397px;
+         height: 135.22px;
+         font-family: 'Syne';
+         font-size: 28px;
+         line-height: 100px;
+         text-transform: capitalize;
+         margin: 10px;
+         color: #FFFFFF;
+          }
+
+}
